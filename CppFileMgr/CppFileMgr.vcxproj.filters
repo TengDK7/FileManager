@@ -18,5 +18,19 @@
     <ClCompile Include="CppFileMgr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CppFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDir.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CppFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDir.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
