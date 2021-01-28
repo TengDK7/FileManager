@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MyPersonalProject\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj": {}
+    "E:\\C#\\Program\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj": {}
   },
   "projects": {
-    "E:\\MyPersonalProject\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj": {
+    "E:\\C#\\Program\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MyPersonalProject\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj",
+        "projectUniqueName": "E:\\C#\\Program\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj",
         "projectName": "CShapeFileMgr",
-        "projectPath": "E:\\MyPersonalProject\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj",
-        "packagesPath": "C:\\Users\\tengqi\\.nuget\\packages\\",
-        "outputPath": "E:\\MyPersonalProject\\FileManager\\CShapeFileMgr\\obj\\",
+        "projectPath": "E:\\C#\\Program\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj",
+        "packagesPath": "C:\\Users\\47831\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\Program\\FileManager\\CShapeFileMgr\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tengqi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47831\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,11 +25,11 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.grapecity.com/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -53,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

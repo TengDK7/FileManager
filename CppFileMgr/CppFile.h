@@ -1,16 +1,17 @@
 #pragma once
+#include"stdafx.h"
 #include<string>
 using namespace std;
 
 class CppFile
 {
 public:
-    static bool IsFileExist(string filepath);
-    static bool CreateFile(string filepath);
-    static bool DeleteFile(string filepath);
-    static string ReadFileText(string filepath);
-    static bool WriteFileText(string filepath);
-    static bool AppendFileText(string filepath);
+    static bool IsFileExist(const string& filepath,int index);
+    static bool CreateFile(const string& filepath);
+    static bool DeleteFile(const string& filepath);
+    static string ReadFileText(const string& filepath);
+    static bool WriteFileText(const string& filepath);
+    static bool AppendFileText(const string& filepath);
     template<class T>
     static bool ReadBinFile(T& mobject);
     template<class T>

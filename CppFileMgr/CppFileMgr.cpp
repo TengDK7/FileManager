@@ -1,11 +1,20 @@
 ﻿// CppFileMgr.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-
+#include"stdafx.h"
 #include <iostream>
+#include"CppDir.h"
+#include"CppFile.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    bool r1 = CppDir::IsDirExist("./TestDir", 1);
+    bool r2 = CppDir::IsDirExist("./TestDir", 2);
+    bool r3 = CppDir::IsDirExist("./MissDir", 1);
+    bool r4 = CppDir::IsDirExist("./MissDir", 2);
+    std::cout << R"(("./TestDir", 1))" << ends << "=" << ends << r1 << endl;
+    std::cout << R"(("./TestDir", 2))" << ends << "=" << ends << r2 << endl;
+    std::cout << R"(("./MissDir", 1))" << ends << "=" << ends << r3 << endl;
+    std::cout << R"(("./MissDir", 2))" << ends << "=" << ends << r4 << endl;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

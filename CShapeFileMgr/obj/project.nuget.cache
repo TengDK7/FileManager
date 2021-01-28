@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kx6HlZIhAmrymhEpqlI1MAaLvJmy6v9ihGSl9WRKRXg9qubP0S5qhwxsutoMdG7ZfR7xg5bvr42rQQUTnFNiTw==",
+  "dgSpecHash": "2RnZ0IjUZ8gy90InaEcR3gecqRouPaogjME0A//FsP6brQAKmBQTcq43iOAze455PbxCDiSDA3Uw1FbqzSr5yg==",
   "success": true,
-  "projectFilePath": "E:\\MyPersonalProject\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj",
+  "projectFilePath": "E:\\C#\\Program\\FileManager\\CShapeFileMgr\\CShapeFileMgr.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

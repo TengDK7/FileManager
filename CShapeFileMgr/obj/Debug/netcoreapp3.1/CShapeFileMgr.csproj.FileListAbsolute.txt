@@ -4,10 +4,10 @@ E:\C#\Program\FIleManager\CShapeFileMgr\bin\Debug\netcoreapp3.1\CShapeFileMgr.ru
 E:\C#\Program\FIleManager\CShapeFileMgr\bin\Debug\netcoreapp3.1\CShapeFileMgr.runtimeconfig.dev.json
 E:\C#\Program\FIleManager\CShapeFileMgr\bin\Debug\netcoreapp3.1\CShapeFileMgr.dll
 E:\C#\Program\FIleManager\CShapeFileMgr\bin\Debug\netcoreapp3.1\CShapeFileMgr.pdb
-E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.csprojAssemblyReference.cache
 E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.AssemblyInfoInputs.cache
 E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.AssemblyInfo.cs
 E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.csproj.CoreCompileInputs.cache
 E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.dll
 E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.pdb
 E:\C#\Program\FIleManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.genruntimeconfig.cache
+E:\C#\Program\FileManager\CShapeFileMgr\obj\Debug\netcoreapp3.1\CShapeFileMgr.csprojAssemblyReference.cache
