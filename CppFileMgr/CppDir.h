@@ -7,7 +7,7 @@ class CppDir
 {
 public:
     static bool IsDirExist(const string& dirpath,int index);
-    static bool CreateDir(const string& dirpath);
+    static bool CreateDir(const string& dirpath,int index);
     static bool DeleteDir(const string& dirpath);
 };
 

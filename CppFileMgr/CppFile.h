@@ -7,7 +7,7 @@ class CppFile
 {
 public:
     static bool IsFileExist(const string& filepath,int index);
-    static bool CreateFile(const string& filepath);
+    static bool CreateFile(const string& filepath,int index);
     static bool DeleteFile(const string& filepath);
     static string ReadFileText(const string& filepath);
     static bool WriteFileText(const string& filepath);

@@ -53,8 +53,44 @@ bool CppFile::IsFileExist(const string& filepath,int index)
     return false;
 }
 
-bool CppFile::CreateFile(const string& filepath)
+bool CppFile::CreateFile(const string& filepath,int index)
 {
+    if (IsFileExist(filepath, 1))
+        return true;
+
+    switch (index)
+    {
+    case 1:
+    {
+        ofstream fout(filepath, ios_base::out);
+        if (fout.is_open())
+        {
+            fout.close();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        break;
+    }
+    case 2:
+    {
+        FILE* file = fopen(filepath.c_str(), "a");
+        if (file)
+        {
+            delete file;
+            return true;
+        }
+        else
+        {
+            return true;
+        }
+        break;
+    }
+    default:
+        break;
+    }
     return false;
 }
 

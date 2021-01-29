@@ -46,8 +46,41 @@ bool CppDir::IsDirExist(const string& dirpath,int index)
     return false;
 }
 
-bool CppDir::CreateDir(const string& dirpath)
+bool CppDir::CreateDir(const string& dirpath,int index)
 {
+    if (IsDirExist(dirpath,1))
+        return true;
+
+    switch (index)
+    {
+    case 1://command
+    {
+        string command = "mkdir -p" + dirpath;
+        auto result = system(command.c_str());
+        if (result == 0)
+            return true;
+        else
+            return false;
+        break;
+    }
+    case 2://direct.h
+    {
+        if (mkdir(dirpath.c_str()) == 0)// 返回 0 表示创建成功，-1 表示失败
+            return true;
+        else
+            return false;
+        break;
+    }
+    case 3:
+    {
+        return CreateDirectory(s2ws(dirpath).c_str(), NULL);
+        break;
+    }
+    case 4:
+    {
+        break;
+    }
+    }
     return false;
 }
 
