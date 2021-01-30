@@ -55,7 +55,9 @@ bool CppDir::CreateDir(const string& dirpath,int index)
     {
     case 1://command
     {
-        string command = "mkdir -p" + dirpath;
+        //不可使用相对路径，文件路径不可使用"/"需要使用‘\\’,可以自动递归创建文件夹
+        //相对的还有  rmdir（rd） 移除文件夹|mkdir（md）创建文件夹，在命令行中可以使用相对路径 
+        string command = "mkdir " + dirpath; 
         auto result = system(command.c_str());
         if (result == 0)
             return true;
@@ -65,7 +67,7 @@ bool CppDir::CreateDir(const string& dirpath,int index)
     }
     case 2://direct.h
     {
-        if (mkdir(dirpath.c_str()) == 0)// 返回 0 表示创建成功，-1 表示失败
+        if (_mkdir(dirpath.c_str()) == 0)//返回0表示创建成功，-1表示失败，不可自动递归创建文件夹
             return true;
         else
             return false;
@@ -73,7 +75,7 @@ bool CppDir::CreateDir(const string& dirpath,int index)
     }
     case 3:
     {
-        return CreateDirectory(s2ws(dirpath).c_str(), NULL);
+        return CreateDirectory(s2ws(dirpath).c_str(), NULL);//不可自动递归创建文件夹
         break;
     }
     case 4:

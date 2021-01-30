@@ -6,12 +6,12 @@ using namespace std;
 class CppFile
 {
 public:
-    static bool IsFileExist(const string& filepath,int index);
-    static bool CreateFile(const string& filepath,int index);
-    static bool DeleteFile(const string& filepath);
-    static string ReadFileText(const string& filepath);
-    static bool WriteFileText(const string& filepath);
-    static bool AppendFileText(const string& filepath);
+    static bool IsFileExist(const string filepath,int index);
+    static bool CreateFileW(const string& filepath,int index);
+    static bool DeleteFileW(const string& filepath);
+    static bool ReadFileText(const string& filepath, string& text, int index);
+    static bool WriteFileText(const string& filepath, string& text,int index);
+    static bool AppendFileText(const string& filepath, const string& text);
     template<class T>
     static bool ReadBinFile(T& mobject);
     template<class T>

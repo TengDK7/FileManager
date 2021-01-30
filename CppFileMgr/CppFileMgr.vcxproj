@@ -149,6 +149,7 @@
     <ClInclude Include="CppDir.h" />
     <ClInclude Include="CppFile.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Tool.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Readme.txt" />

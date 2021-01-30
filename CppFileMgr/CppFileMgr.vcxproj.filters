@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="工具">
+      <UniqueIdentifier>{88f3615f-cd8c-4746-b1d0-0aeda926c0a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppFileMgr.cpp">
@@ -34,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>工具</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
