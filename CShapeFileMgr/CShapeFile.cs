@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace CShapeFileMgr
 {
@@ -8,33 +7,89 @@ namespace CShapeFileMgr
     {
         public static bool IsFileExist(string filepath)
         {
-            return false;
+            return File.Exists(filepath);
         }
         public static bool CreateFile(string filepath)
         {
-            return false;
+            try
+            {
+                using (File.Create(filepath)) { };
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
         public static bool DeleteFile(string filepath)
         {
-            return false;
+            try
+            {
+                File.Delete(filepath);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
         public static bool WriteFileText(string filepath,string text)
         {
-            return false;
+            try
+            {
+                File.WriteAllText(filepath, text);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
-        public static string ReadFileText(string filepath)
+        public static bool ReadFileText(string filepath,out string text)
         {
-            return string.Empty;
+            text = string.Empty;
+            try
+            {
+                text = File.ReadAllText(filepath);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
         public static bool AppendFileText(string filepath,string text)
         {
-            return false;
+            try
+            {
+                File.AppendAllText(filepath, text);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
-        public static bool ReadBinFile<T>(string filepath,T mobject)
+        public static bool ReadBinFile<T>(string filepath,out byte[] content)
         {
-            return false;
+            content = null;
+            try
+            {
+                content = File.ReadAllBytes(filepath);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false,e.Message);
+                return false;
+            }
+            return true;
         }
-        public static bool WriteBinFile<T>(string filepath,T mobject)
+        public static bool WriteBinFile<T>(string filepath)
         {
             return false;
         }

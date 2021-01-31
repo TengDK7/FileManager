@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
 
 namespace CShapeFileMgr
 {
@@ -8,15 +7,35 @@ namespace CShapeFileMgr
     {
         public static bool IsDirExist(string dirpath)
         {
-            return false;
+            return Directory.Exists(dirpath);  
         }
         public static bool CreateDir(string dirpath)
         {
-            return false;
+            try
+            {
+                if (!Directory.Exists(dirpath))
+                    Directory.CreateDirectory(dirpath);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
         public static bool DeleteDir(string dirpath)
         {
-            return false;
+            try
+            {
+                if (Directory.Exists(dirpath))
+                    Directory.Delete(dirpath);
+            }
+            catch(Exception e)
+            {
+                System.Diagnostics.Debug.Assert(false, e.Message);
+                return false;
+            }
+            return true;
         }
     }
 }
