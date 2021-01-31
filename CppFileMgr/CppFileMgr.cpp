@@ -67,9 +67,27 @@ int main()
     auto d2 = CppFile::ReadFileText("./testfile.txt", text2, 2);
     string text3;
     auto d3 = CppFile::ReadFileText("./testfile.txt", text3, 3);
-
     std::cout << text1 << endl << text2 << endl << text3 << endl;
 
+    auto e1 = CppFile::WriteFileText("./writefile.txt", text1, 1);
+    auto e2 = CppFile::WriteFileText("./writefile.txt", text1, 2);
+    std::cout << R"(("./writefile.txt", text1, 1))" << ends << "=" << ends << e1 << endl;
+    std::cout << R"(("./writefile.txt", text1, 2))" << ends << "=" << ends << e2 << endl;
+
+    auto f1 = CppFile::AppendFileText("./writefile.txt", text1);
+    std::cout << R"(AppendFileText("./writefile.txt", text1))" << ends << "=" << ends << f1 << endl;
+
+    BinObjct MyObject("Jack", 500);
+    auto g1 = CppFile::WriteBinFile(MyObject, "./myobject.bin");
+    BinObjct anthorobj;
+    auto g2 = CppFile::ReadBinFile(anthorobj, "./myobject.bin");
+    std::cout << R"(WriteBinFile(MyObject, "./myobject.bin"))" << ends << "=" << ends << g1 << endl;
+    std::cout << R"(ReadBinFile(anthorobj, "./myobject.bin"))" << ends << "=" << ends << g2 << endl;
+
+    auto h1 = CppFile::DeleteFileW("./myobject.bin", 1);
+    auto h2 = CppFile::DeleteFileW("./missobject.bin", 1);
+    std::cout << R"(DeleteFileW("./myobject.bin", 1))" << ends << "=" << ends << h1 << endl;
+    std::cout << R"(DeleteFileW("./missobject.bin", 1))" << ends << "=" << ends << h2 << endl;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
